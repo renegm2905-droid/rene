@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    background-color: var(--color-fondo-secundario);
+    font-family: var(--fuente-principal);
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    width: 360px;
+    min-height: 100vh;
+    background: var(--color-fondo);
+    color: var(--color-blanco);
+}
+
+/* Barra superior */
+.top-bar {
+    background: var(--color-principal);
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo,
+.perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radio-circular);
+}
+
+/* Título */
+.titulo {
+    display: flex;
+    align-items: center;
+    padding: var(--padding-general);
+}
+
+.titulo h1 {
+    margin: 0;
+    font-size: 28px;
+    font-family: var(--fuente-titulo);
+}
+
+.volver {
+    background: none;
+    border: none;
+    color: var(--color-blanco);
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Filtros */
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.filtros button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: var(--radio-general);
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.filtros .activo {
+    background: var(--color-negro);
+    color: var(--color-blanco);
+}
+
+/* Notificaciones */
+.lista-notificaciones {
+    padding: var(--padding-general);
+}
+
+.notificacion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.notificacion img {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radio-circular);
+    object-fit: cover;
+}
+
+.contenido {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.contenido h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.contenido p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.contenido span {
+    font-size: 12px;
+    color: var(--color-texto-secundario);
+}
+
+.indicador {
+    width: 12px;
+    height: 12px;
+    background: var(--color-indicador);
+    border-radius: var(--radio-circular);
+}
+
+/* Barra inferior */
+.menu {
+    position: fixed;
+    bottom: 0;
+    width: 360px;
+    background: var(--color-principal);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.menu button {
+    background: none;
+    border: none;
+    color: var(--color-blanco);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.btn-centro {
+    width: 55px;
+    height: 55px;
+    background: var(--color-principal);
+    border: 3px solid var(--color-blanco);
+    border-radius: var(--radio-circular);
+    font-size: 32px;
+}

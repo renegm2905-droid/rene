@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--secondary-background);
+    font-family: var(--font-primary);
+
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 360px;
+    min-height: 100vh;
+
+    background: var(--background-color);
+
+    padding-bottom: 100px;
+
+    background-image: url("patron.png");
+    background-size: 150px;
+}
+
+/* Barra superior */
+.top-header {
+    background: var(--primary-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 15px;
+
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.logo,
+.profile {
+    width: 40px;
+    height: 40px;
+
+    border-radius: var(--circle-radius);
+
+    object-fit: cover;
+}
+
+/* Secciones */
+.settings-section {
+    padding: 30px 20px 0;
+}
+
+.settings-section h2 {
+    color: var(--text-color);
+
+    font-family: var(--font-title);
+
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+/* Opciones */
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: var(--option-spacing);
+
+    color: var(--text-color);
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.option:hover {
+    transform: translateX(5px);
+}
+
+.option-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.option-info i {
+    color: var(--icon-color);
+
+    font-size: 1.4rem;
+
+    width: 25px;
+
+    text-align: center;
+}
+
+.option span {
+    font-size: 1rem;
+}
+
+.option > i {
+    color: var(--text-color);
+
+    font-size: 1.3rem;
+}
+
+/* Menú inferior */
+.bottom-nav {
+    position: fixed;
+
+    bottom: 0;
+
+    width: 360px;
+    height: var(--nav-height);
+
+    background: var(--primary-color);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 0 -2px 8px var(--shadow-color);
+}
+
+.bottom-nav button {
+    background: transparent;
+    border: none;
+
+    color: var(--text-color);
+
+    font-size: 1.6rem;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.bottom-nav button:hover {
+    transform: scale(1.1);
+}
+
+.add-button {
+    width: 55px;
+    height: 55px;
+
+    border-radius: var(--circle-radius);
+
+    background: var(--primary-color);
+
+    border: 3px solid var(--text-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.8rem;
+}

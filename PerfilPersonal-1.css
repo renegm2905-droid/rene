@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#222;
+    font-family:Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+}
+
+.perfil{
+    width:375px;
+    min-height:100vh;
+    background:#5f6879;
+    color:white;
+}
+
+header{
+    background:#6677E5;
+    height:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 15px;
+}
+
+.logo,
+.avatar{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+}
+
+.banner img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.informacion{
+    text-align:center;
+    margin-top:-55px;
+}
+
+.foto-perfil{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    border:4px solid black;
+}
+
+.informacion h2{
+    margin-top:10px;
+}
+
+.informacion button{
+    margin-top:10px;
+    padding:8px 15px;
+    border:none;
+    border-radius:5px;
+}
+
+.estadisticas{
+    display:flex;
+    justify-content:space-around;
+    padding:20px 10px;
+    text-align:center;
+}
+
+.estadisticas h3{
+    font-size:18px;
+}
+
+.estadisticas p{
+    font-size:12px;
+}
+
+.videojuego{
+    padding:15px;
+}
+
+.juego{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    margin-top:15px;
+}
+
+.juego img{
+    width:60px;
+}
+
+.menu{
+    padding:15px;
+}
+
+.item{
+    padding:18px 0;
+    border-top:1px solid rgba(255,255,255,.3);
+    display:flex;
+    justify-content:space-between;
+}
+
+nav{
+    position:fixed;
+    bottom:0;
+    width:375px;
+    height:70px;
+    background:#6677E5;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+nav button{
+    background:none;
+    border:none;
+    color:white;
+    font-size:22px;
+}

@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+/* Header */
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--primary-color);
+    padding: var(--padding-medium);
+}
+
+.top-bar h1 {
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Buscador */
+
+.search-container {
+    padding: var(--padding-medium);
+}
+
+.search-container input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: var(--radius-small);
+    background: rgba(255, 255, 255, 0.85);
+}
+
+/* Lista de chats */
+
+.chat-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-card {
+    display: flex;
+    align-items: center;
+    padding: var(--padding-medium);
+    gap: 15px;
+}
+
+.chat-card img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chat-info {
+    flex: 1;
+}
+
+.chat-info h2 {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.chat-info p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.chat-meta {
+    text-align: right;
+    font-size: 0.75rem;
+}
+
+.badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    background: var(--badge-color);
+    color: var(--background-color);
+    border-radius: 50%;
+    margin-top: 5px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+/* Navegación inferior */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: var(--nav-height);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: var(--primary-color);
+}
+
+.bottom-nav button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.add-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid var(--text-color);
+}
